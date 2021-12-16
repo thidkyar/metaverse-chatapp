@@ -3,7 +3,7 @@ import { useMoralis } from "react-moralis";
 import Login from "../components/Login";
 
 export default function Home() {
-  const { isAuthenticated, logout } = useMoralis()
+    const { isAuthenticated, logout } = useMoralis();
 
     if (!isAuthenticated) return <Login />;
     return (
@@ -13,7 +13,12 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <h1>Welcome to the app</h1>
-            <button onClick={logout} className="border-solid border-2 border-black p-1 rounded-lg">Logout</button>
+            <button
+                onClick={logout}
+                className="border-solid border-2 border-black p-1 rounded-lg"
+            >
+                Logout
+            </button>
         </div>
     );
 }

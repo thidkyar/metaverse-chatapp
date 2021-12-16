@@ -16,9 +16,14 @@ function Login() {
                 />
                 <button
                     onClick={authenticate}
-                    className="bg-blue-500 rounded-lg p-5 font-bold animate-pulse border-solid border-2 text-white"
+                    className="bg-blue-500 hover:bg-blue-400 rounded-lg px-4 py-2 font-bold animate-pulse border-solid border-2 text-white inline-flex items-center space-x-2"
                 >
-                    Login to the METAVERSE
+                    <Image
+                        src="/static/icons/metamask-icon.png"
+                        height={30}
+                        width={30}
+                    />
+                    <span>LOGIN WITH METAMASK</span>
                 </button>
             </div>
 
